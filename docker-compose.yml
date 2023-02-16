@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  hello-world-jar:
+    image: "hello-world-jar:latest"
+    ports:
+      - 443:443
+    logging:
+      driver: awslogs
+      options:
+        awslogs-region: ap-south-1
+        awslogs-group: ""
+        awslogs-stream: ""
